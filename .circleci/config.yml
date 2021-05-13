@@ -35,3 +35,5 @@ workflows:
           post-steps:
             - run: heroku run rails db:migrate
             - run: heroku open
+          pre-steps:
+            - run: git push heroku main
