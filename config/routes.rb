@@ -3,6 +3,7 @@ Rails.application.routes.draw do
     namespace :v1 do 
       post '/users', to: 'users#create'
       post '/sessions', to: 'sessions#create'
-    end 
-  end 
+      get '/salaries', to: 'salaries#index'
+    end
+  end
 end

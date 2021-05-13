@@ -3,7 +3,7 @@ FactoryBot.define do
     first_name { Faker::Name.name }
     last_name { Faker::Name.name }
     city { Faker::String.random(length: 5) }
-    state { Faker::String.random(length: 2) }
+    state { "CO" }
     zipcode { Faker::Number.number(digits: 5).to_s }
     email { Faker::Internet.email }
     password { 'password' }
