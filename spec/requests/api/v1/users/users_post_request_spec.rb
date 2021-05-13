@@ -26,7 +26,15 @@ RSpec.describe "Api::V1::Users Create", type: :request do
 
   describe 'sad path' do 
     it 'should return 400 if email is already taken' do 
-      user = create(:user)
+      user = create(:user,
+                  email: "whatever@example.com",
+                  password: "password",
+                  first_name: "Khoa",
+                  last_name: "Nguyen",
+                  city: "The Moon",
+                  state: "MN",
+                  zipcode: '80000'
+        )
       invalid_body = {
                       "email": user.email,
                       "password": "password",
