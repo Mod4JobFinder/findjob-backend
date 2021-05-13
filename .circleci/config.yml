@@ -28,11 +28,17 @@ jobs:
       - run: bundle install --path vendor/bundle
       - run: bundle exec rake db:setup
       - run: bundle exec rspec
-workflows:
-  heroku_deploy:
-    jobs:
-      - heroku/deploy-via-git:
-          post-steps:
-            - run: heroku run rails db:migrate
-          pre-steps:
-            - run: git push git@heroku.com:findjob-backend-staging.git main
+deploy:
+    machine:
+        enabled: true
+    working_directory: ~/findjobs-backend
+    environment:
+      HEROKU_APP: "https://findjob-backend.herokuapp.com/" # define env var $HEROKU_APP
+    steps:
+      - checkout
+      - run:
+          name: heroku push
+          command: git push heroku main
+      - run:
+          name: heroku migrate
+          command: heroku run rails db:migrate
