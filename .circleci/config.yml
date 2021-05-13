@@ -1,6 +1,7 @@
 version: 2.1
 orbs:
   ruby: circleci/ruby@0.1.2 
+  heroku: circleci/heroku@1.2.6
 
 jobs:
   build:
@@ -27,3 +28,10 @@ jobs:
       - run: bundle install --path vendor/bundle
       - run: bundle exec rake db:setup
       - run: bundle exec rspec
+workflows:
+  heroku_deploy:
+    jobs:
+      - heroku/deploy-via-git:
+          post-steps:
+            - run: heroku run rails db:migrate
+            - run: heroku open
