@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.teleport.org/api/urban_areas/slug:denver/
+    uri: https://urban-salary-ms.herokuapp.com/api/denver
     body:
       encoding: US-ASCII
       string: ''
@@ -18,88 +18,21 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Connection:
+      - keep-alive
+      Server:
+      - gunicorn
+      Date:
+      - Fri, 14 May 2021 22:53:38 GMT
       Content-Type:
-      - application/json; charset=utf-8
+      - application/json
       Content-Length:
-      - '612'
-      Connection:
-      - keep-alive
-      Access-Control-Max-Age:
-      - '600'
-      Cache-Control:
-      - public, max-age=300
-      Server:
-      - nginx
-      X-Apiproxy-Cache-Status:
-      - HIT
-      Date:
-      - Thu, 13 May 2021 16:47:57 GMT
+      - '9525'
       Via:
-      - 1.1 google, 1.1 dcee1124728af441beff75c95d9d9d74.cloudfront.net (CloudFront)
-      Vary:
-      - Origin,Accept-Encoding
-      X-Cache:
-      - Miss from cloudfront
-      X-Amz-Cf-Pop:
-      - DEN50-C2
-      X-Amz-Cf-Id:
-      - 8cPfCxe3TqVbkLn5yL1xl3plMXT-m0rWPFFHyNH0s-KDzWxpYuX3jQ==
+      - 1.1 vegur
     body:
-      encoding: ASCII-8BIT
-      string: '{"_links":{"curies":[{"href":"https://developers.teleport.org/api/resources/Location/#!/relations/{rel}/","name":"location","templated":true},{"href":"https://developers.teleport.org/api/resources/City/#!/relations/{rel}/","name":"city","templated":true},{"href":"https://developers.teleport.org/api/resources/UrbanArea/#!/relations/{rel}/","name":"ua","templated":true},{"href":"https://developers.teleport.org/api/resources/Country/#!/relations/{rel}/","name":"country","templated":true},{"href":"https://developers.teleport.org/api/resources/Admin1Division/#!/relations/{rel}/","name":"a1","templated":true},{"href":"https://developers.teleport.org/api/resources/Timezone/#!/relations/{rel}/","name":"tz","templated":true}],"self":{"href":"https://api.teleport.org/api/urban_areas/slug:denver/"},"ua:admin1-divisions":[{"href":"https://api.teleport.org/api/countries/iso_alpha2:US/admin1_divisions/geonames:CO/","name":"Colorado"}],"ua:cities":{"href":"https://api.teleport.org/api/urban_areas/slug:denver/cities/"},"ua:continent":{"href":"https://api.teleport.org/api/continents/geonames:NA/","name":"North
-        America"},"ua:countries":[{"href":"https://api.teleport.org/api/countries/iso_alpha2:US/","name":"United
-        States"}],"ua:details":{"href":"https://api.teleport.org/api/urban_areas/slug:denver/details/"},"ua:identifying-city":{"href":"https://api.teleport.org/api/cities/geonameid:5419384/","name":"Denver"},"ua:images":{"href":"https://api.teleport.org/api/urban_areas/slug:denver/images/"},"ua:primary-cities":[{"href":"https://api.teleport.org/api/cities/geonameid:5419384/","name":"Denver"},{"href":"https://api.teleport.org/api/cities/geonameid:5412347/","name":"Aurora"}],"ua:salaries":{"href":"https://api.teleport.org/api/urban_areas/slug:denver/salaries/"},"ua:scores":{"href":"https://api.teleport.org/api/urban_areas/slug:denver/scores/"}},"bounding_box":{"latlon":{"east":-104.6393,"north":39.9992,"south":39.4765,"west":-105.1913}},"continent":"North
-        America","full_name":"Denver, Colorado","is_government_partner":false,"mayor":"Michael
-        Hancock","name":"Denver","slug":"denver","teleport_city_url":"https://teleport.org/cities/denver/","ua_id":"9xj65"}'
-  recorded_at: Thu, 13 May 2021 16:47:57 GMT
-- request:
-    method: get
-    uri: https://api.teleport.org/api/urban_areas/slug:denver/salaries/
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v1.4.1
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Access-Control-Max-Age:
-      - '600'
-      Cache-Control:
-      - public, max-age=300
-      Server:
-      - nginx
-      X-Apiproxy-Cache-Status:
-      - MISS
-      Date:
-      - Thu, 13 May 2021 16:47:57 GMT
-      Via:
-      - 1.1 google, 1.1 235fa9476ee502b13c0801d1fa3b57a2.cloudfront.net (CloudFront)
-      Vary:
-      - Origin,Accept-Encoding
-      X-Cache:
-      - Miss from cloudfront
-      X-Amz-Cf-Pop:
-      - DEN50-C2
-      X-Amz-Cf-Id:
-      - alZPk_Fy1MXAM7wnR__tSlt454fTcVH8kZXlnw26Jx1pIJxgBSrIBw==
-    body:
-      encoding: ASCII-8BIT
-      string: '{"_links":{"curies":[{"href":"https://developers.teleport.org/api/resources/Location/#!/relations/{rel}/","name":"location","templated":true},{"href":"https://developers.teleport.org/api/resources/City/#!/relations/{rel}/","name":"city","templated":true},{"href":"https://developers.teleport.org/api/resources/UrbanArea/#!/relations/{rel}/","name":"ua","templated":true},{"href":"https://developers.teleport.org/api/resources/Country/#!/relations/{rel}/","name":"country","templated":true},{"href":"https://developers.teleport.org/api/resources/Admin1Division/#!/relations/{rel}/","name":"a1","templated":true},{"href":"https://developers.teleport.org/api/resources/Timezone/#!/relations/{rel}/","name":"tz","templated":true}],"self":{"href":"https://api.teleport.org/api/urban_areas/slug:denver/salaries/"}},"salaries":[{"job":{"id":"ACCOUNT-MANAGER","title":"Account
-        Manager"},"salary_percentiles":{"percentile_25":52755.545248860515,"percentile_50":66050.59588847861,"percentile_75":82696.16391306919}},{"job":{"id":"ACCOUNTANT","title":"Accountant"},"salary_percentiles":{"percentile_25":46322.45959499479,"percentile_50":55013.10116503102,"percentile_75":65334.209933035345}},{"job":{"id":"ADMINISTRATIVE-ASSISTANT","title":"Administrative
+      encoding: UTF-8
+      string: '{"salaries":[{"job":{"id":"ACCOUNT-MANAGER","title":"Account Manager"},"salary_percentiles":{"percentile_25":52755.545248860515,"percentile_50":66050.59588847861,"percentile_75":82696.16391306919}},{"job":{"id":"ACCOUNTANT","title":"Accountant"},"salary_percentiles":{"percentile_25":46322.45959499479,"percentile_50":55013.10116503102,"percentile_75":65334.209933035345}},{"job":{"id":"ADMINISTRATIVE-ASSISTANT","title":"Administrative
         Assistant"},"salary_percentiles":{"percentile_25":31245.705520432653,"percentile_50":37629.15344764931,"percentile_75":45316.72963059826}},{"job":{"id":"ARCHITECT","title":"Architect"},"salary_percentiles":{"percentile_25":43470.96334773236,"percentile_50":53828.81526137848,"percentile_75":66654.63862085681}},{"job":{"id":"ATTORNEY","title":"Attorney"},"salary_percentiles":{"percentile_25":68594.29715151139,"percentile_50":92631.65415004207,"percentile_75":125092.37220727094}},{"job":{"id":"BUSINESS-ANALYST","title":"Business
         Analyst"},"salary_percentiles":{"percentile_25":57247.13973526262,"percentile_50":68672.79017772569,"percentile_75":82378.8250837106}},{"job":{"id":"BUSINESS-DEVELOPMENT","title":"Business
         Development"},"salary_percentiles":{"percentile_25":49057.25087588526,"percentile_50":64993.75746682696,"percentile_75":86107.32224567399}},{"job":{"id":"C-LEVEL-EXECUTIVE","title":"C
@@ -136,6 +69,8 @@ http_interactions:
         Administrator"},"salary_percentiles":{"percentile_25":53889.29340697162,"percentile_50":64856.55923374075,"percentile_75":78055.82537282901}},{"job":{"id":"TEACHER","title":"Teacher"},"salary_percentiles":{"percentile_25":33575.337874155346,"percentile_50":41525.90286934369,"percentile_75":51359.14389238436}},{"job":{"id":"UX-DESIGNER","title":"UX
         Designer"},"salary_percentiles":{"percentile_25":64647.76637002433,"percentile_50":79267.66205244981,"percentile_75":97193.80266438473}},{"job":{"id":"WAITER","title":"Waiter"},"salary_percentiles":{"percentile_25":17669.07598526329,"percentile_50":27045.245825939357,"percentile_75":41396.91981604157}},{"job":{"id":"WEB-DESIGNER","title":"Web
         Designer"},"salary_percentiles":{"percentile_25":38857.385824370846,"percentile_50":47546.68587216852,"percentile_75":58179.089752579195}},{"job":{"id":"WEB-DEVELOPER","title":"Web
-        Developer"},"salary_percentiles":{"percentile_25":51218.21672136418,"percentile_50":63464.58172585839,"percentile_75":78639.07397537524}}]}'
-  recorded_at: Thu, 13 May 2021 16:47:57 GMT
+        Developer"},"salary_percentiles":{"percentile_25":51218.21672136418,"percentile_50":63464.58172585839,"percentile_75":78639.07397537524}}]}
+
+        '
+  recorded_at: Fri, 14 May 2021 22:53:38 GMT
 recorded_with: VCR 6.0.0

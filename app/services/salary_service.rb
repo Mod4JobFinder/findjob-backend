@@ -12,14 +12,14 @@ class SalaryService
     areas = parse(response)['_links']['ua:items'].map{|item| item['name']}
   end
 
-  def self.get_salary_link(city)
-    response = conn.get("/api/urban_areas/slug%3A#{city}/")
-    return [] if response.status != 200
-    parse(response)['_links']['ua:salaries']['href']
-  end
+  # def self.get_salary_link(city)
+  #   response = conn.get("/api/urban_areas/slug%3A#{city}/")
+  #   return [] if response.status != 200
+  #   parse(response)['_links']['ua:salaries']['href']
+  # end
 
   def self.get_salary_info(city)
-    response = Faraday.get(get_salary_link(city))
+    response = Faraday.get("https://urban-salary-ms.herokuapp.com/api/#{city}")
     salaries = parse(response)['salaries']
     final_jobs = []
     jobs = ['Data Analyst', 'Data Scientist', 'Mobile Developer', 'QA Engineer', 'Sofware Engineer', 'Systems Administrator', 'Web Developer']
