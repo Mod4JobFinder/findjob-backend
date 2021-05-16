@@ -4,7 +4,8 @@ class Api::V1::SessionsController < ApplicationController
     @user = User.find_by(email: params[:email].downcase)
     
     if @user && @user.authenticate(user_params[:password])
-    render json: {data: 'success'}, status: 201
+      @serial = UserSerializer.new(@user)
+    render json: @serial, status: 201
     else 
     render json: {error: 'invalid credentials'}, status: 400
     end

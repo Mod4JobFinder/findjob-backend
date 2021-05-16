@@ -1,17 +1,25 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/kn/Projects/findjob-backend/spec/models/job_listing_spec.rb": {
+      "/Users/kn/Projects/findjob-backend/spec/facades/salary_facade_spec.rb": {
         "lines": [
           1,
           null,
           1,
           1,
-          2,
-          2,
-          2,
-          2,
-          2,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
           null,
           null
         ]
@@ -240,11 +248,10 @@
           null,
           null,
           null,
-          null,
-          null,
-          null,
-          null,
-          null,
+          1,
+          1,
+          1,
+          1,
           null,
           null,
           null,
@@ -348,13 +355,13 @@
         "lines": [
           1,
           1,
-          2,
-          2,
-          2,
-          2,
-          2,
-          2,
-          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
           9,
           null,
           null
@@ -367,7 +374,54 @@
           1,
           1,
           1,
+          1,
           null,
+          null,
+          null
+        ]
+      },
+      "/Users/kn/Projects/findjob-backend/app/facades/salary_facade.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          87,
+          87,
+          1,
+          84,
+          null,
+          null,
+          null,
+          1,
+          85,
+          85,
+          85,
+          510,
+          null,
+          null,
+          null,
+          null,
+          null,
+          510,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/kn/Projects/findjob-backend/spec/models/job_listing_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
           null,
           null
         ]
@@ -467,11 +521,37 @@
           null
         ]
       },
-      "/Users/kn/Projects/findjob-backend/spec/requests/api/v1/salaries/salaries_request_spec.rb": {
+      "/Users/kn/Projects/findjob-backend/spec/requests/api/v1/salaries/salaries_get_request_spec.rb": {
         "lines": [
           1,
           null,
           1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
           null,
           null
         ]
@@ -529,11 +609,24 @@
           null,
           1,
           1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
           null,
           1,
           1,
           1,
           null,
+          1,
+          1,
           1,
           1,
           1,
@@ -617,6 +710,14 @@
           1,
           1,
           1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
           1,
           null,
           null,
@@ -847,6 +948,133 @@
           null
         ]
       },
+      "/Users/kn/Projects/findjob-backend/spec/services/salary_service_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/kn/Projects/findjob-backend/app/services/salary_service.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          87,
+          null,
+          null,
+          1,
+          1,
+          88,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          86,
+          86,
+          86,
+          86,
+          86,
+          602,
+          31304,
+          516,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          86,
+          null,
+          null
+        ]
+      },
+      "/Users/kn/Projects/findjob-backend/app/controllers/api/v1/salaries_controller.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/kn/Projects/findjob-backend/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          1,
+          3,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          11,
+          null,
+          null
+        ]
+      },
+      "/Users/kn/Projects/findjob-backend/app/serializers/salary_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
       "/Users/kn/Projects/findjob-backend/app/controllers/api/v1/sessions_controller.rb": {
         "lines": [
           1,
@@ -855,6 +1083,7 @@
           5,
           null,
           5,
+          1,
           1,
           null,
           4,
@@ -869,22 +1098,11 @@
           null
         ]
       },
-      "/Users/kn/Projects/findjob-backend/app/controllers/application_controller.rb": {
+      "/Users/kn/Projects/findjob-backend/app/serializers/user_serializer.rb": {
         "lines": [
           1,
           1,
-          2,
-          null,
-          null,
           1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          1,
-          11,
-          null,
           null
         ]
       },
@@ -912,6 +1130,6 @@
         ]
       }
     },
-    "timestamp": 1620915776
+    "timestamp": 1621181637
   }
 }
