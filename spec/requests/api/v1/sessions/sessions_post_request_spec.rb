@@ -57,7 +57,7 @@ RSpec.describe "Api::V1::Sessions Create", type: :request do
             expect(response).to have_http_status(201)
             expect(json.keys).to eq([:data])
             expect(json[:data].keys).to eq(%i[id type attributes])
-            expect(json[:data][:attributes].keys).to eq(%i[email first_name last_name city state zipcode])
+            expect(json[:data][:attributes].keys).to eq(%i[email first_name last_name city state zipcode saved_jobs])
         end
     end
 
