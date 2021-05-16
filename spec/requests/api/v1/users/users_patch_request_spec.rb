@@ -32,13 +32,12 @@ RSpec.describe "Api::V1::Users Update", type: :request do
 
       expect(response).to have_http_status(200)
       expect(json[:data]).to eq('user successfully updated')
-      
-      # require 'pry';binding.pry
-      # expect(@user.first_name).to eq('Andrew')
-      # expect(@user.last_name).to eq('Johnston')
-      # expect(@user.city).to eq('Denver')
-      # expect(@user.state).to eq('CO')
-      # expect(@user.zipcode).to eq('80020')
+      user = User.find_by(email:@user.email)
+      expect(user.first_name).to eq('Andrew')
+      expect(user.last_name).to eq('Johnston')
+      expect(user.city).to eq('Denver')
+      expect(user.state).to eq('CO')
+      expect(user.zipcode).to eq('80020')
     end
   end 
 
