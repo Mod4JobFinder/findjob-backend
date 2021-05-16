@@ -49,18 +49,6 @@ RSpec.describe "Api::V1::Sessions Create", type: :request do
 
     describe 'happy path' do 
         it 'should return a 201 if the parameters are valid' do 
-            result = {:data=>
-                            {:id=>"38",
-                            :type=>"user",
-                            :attributes=>
-                                {:email=>"whatever@example.com",
-                                :first_name=>"Khoa",
-                                :last_name=>"Nguyen",
-                                :city=>"The Moon",
-                                :state=>"MN",
-                                :zipcode=>"80000"}}}
-
-
             post api_v1_sessions_path, params: @valid_body
             request.headers['Content-Type'] = 'application/json'
             request.headers['Accept'] = 'application/json'
