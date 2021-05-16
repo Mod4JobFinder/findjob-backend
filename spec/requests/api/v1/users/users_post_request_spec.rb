@@ -112,7 +112,7 @@ RSpec.describe "Api::V1::Users Create", type: :request do
       json = JSON.parse(response.body, symbolize_names: true)
 
       expect(response).to have_http_status(400)
-      expect(json[:error]).to eq(["Password can't be blank", "Password is too short (minimum is 8 characters)"])
+      expect(json[:error]).to eq(["Password can't be blank"])
 
       invalid_body_2 = {
                       "email": "whatever2@example.com",
