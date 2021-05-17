@@ -73,7 +73,7 @@ RSpec.describe "Api::V1::Sessions Create", type: :request do
             post api_v1_sessions_path, params: @empty_email
              json = JSON.parse(response.body, symbolize_names: true)
             expect(response).to have_http_status(400)
-            expect(json[:error]).to eq("invalid credentials")
+            expect(json[:error]).to eq("invalid parameters")
         end
 
          it 'should return a 400 if the parameter no password' do 
@@ -87,21 +87,21 @@ RSpec.describe "Api::V1::Sessions Create", type: :request do
             post api_v1_sessions_path, params: @empty_password
              json = JSON.parse(response.body, symbolize_names: true)
             expect(response).to have_http_status(400)
-            expect(json[:error]).to eq("invalid credentials")
+            expect(json[:error]).to eq("invalid parameters")
         end
 
         it 'should return a 400 if the parameter password is wrong' do 
             post api_v1_sessions_path, params: @invalid_body
              json = JSON.parse(response.body, symbolize_names: true)
             expect(response).to have_http_status(400)
-            expect(json[:error]).to eq("invalid credentials")
+            expect(json[:error]).to eq("invalid parameters")
         end
 
          it 'should return a 400 if the parameter email is wrong' do 
             post api_v1_sessions_path, params: @invalid_email
              json = JSON.parse(response.body, symbolize_names: true)
             expect(response).to have_http_status(400)
-            expect(json[:error]).to eq("invalid credentials")
+            expect(json[:error]).to eq("invalid parameters")
         end
     end
 end
