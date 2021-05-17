@@ -1,13 +1,13 @@
 class Api::V1::UsersController < ApplicationController
   def create
-    return param_missing(["email"]) if !user_params[:email]
+    return invalid_params if !user_params[:email]
     params = user_params
     params[:email] = user_params[:email].downcase
     @user = User.create(user_params)
     if @user.save
       render json: {data: 'success'}, status: 201
     else
-      specific_error(@user)
+      invalid_params
     end
   end
 

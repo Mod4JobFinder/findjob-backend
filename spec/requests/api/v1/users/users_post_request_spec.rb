@@ -52,7 +52,7 @@ RSpec.describe "Api::V1::Users Create", type: :request do
       json = JSON.parse(response.body, symbolize_names: true)
 
       expect(response).to have_http_status(400)
-      expect(json[:error]).to eq(['Email has already been taken'])
+      expect(json[:error]).to eq('invalid parameters')
     end 
 
     it 'should return 400 if missing email' do 
@@ -72,7 +72,7 @@ RSpec.describe "Api::V1::Users Create", type: :request do
       json = JSON.parse(response.body, symbolize_names: true)
 
       expect(response).to have_http_status(400)
-      expect(json[:error]).to eq(['email parameter was not included in your request'])
+      expect(json[:error]).to eq('invalid parameters')
     end 
 
     it 'should return 400 if email is not an email' do 
@@ -92,7 +92,7 @@ RSpec.describe "Api::V1::Users Create", type: :request do
       request.headers['Accept'] = 'application/json'
       json = JSON.parse(response.body, symbolize_names: true)
       expect(response).to have_http_status(400)
-      expect(json[:error]).to eq(["Email is invalid"])
+      expect(json[:error]).to eq('invalid parameters')
     end 
 
     it 'should return 400 if missing password/password confirmation' do 
@@ -112,7 +112,7 @@ RSpec.describe "Api::V1::Users Create", type: :request do
       json = JSON.parse(response.body, symbolize_names: true)
 
       expect(response).to have_http_status(400)
-      expect(json[:error]).to eq(["Password can't be blank"])
+      expect(json[:error]).to eq('invalid parameters')
 
       invalid_body_2 = {
                       "email": "whatever2@example.com",
@@ -130,7 +130,7 @@ RSpec.describe "Api::V1::Users Create", type: :request do
       json = JSON.parse(response.body, symbolize_names: true)
 
       expect(response).to have_http_status(400)
-      expect(json[:error]).to eq(["Password confirmation can't be blank"])
+      expect(json[:error]).to eq('invalid parameters')
     end 
 
     it 'should return 400 if password and confirmation dont match' do 
@@ -150,7 +150,7 @@ RSpec.describe "Api::V1::Users Create", type: :request do
       request.headers['Accept'] = 'application/json'
       json = JSON.parse(response.body, symbolize_names: true)
       expect(response).to have_http_status(400)
-      expect(json[:error]).to eq(["Password confirmation doesn't match Password"])
+      expect(json[:error]).to eq('invalid parameters')
     end
 
     it 'should return 400 if first or last name is missing' do 
@@ -169,7 +169,7 @@ RSpec.describe "Api::V1::Users Create", type: :request do
       request.headers['Accept'] = 'application/json'
       json = JSON.parse(response.body, symbolize_names: true)
       expect(response).to have_http_status(400)
-      expect(json[:error]).to eq(["First name can't be blank"])
+      expect(json[:error]).to eq('invalid parameters')
 
       invalid_body_2 = {
                       "email": "whatever2@example.com",
@@ -186,7 +186,7 @@ RSpec.describe "Api::V1::Users Create", type: :request do
       request.headers['Accept'] = 'application/json'
       json = JSON.parse(response.body, symbolize_names: true)
       expect(response).to have_http_status(400)
-      expect(json[:error]).to eq(["Last name can't be blank"])
+      expect(json[:error]).to eq('invalid parameters')
     end 
 
     it 'should return 400 if city state or zip is missing' do 
@@ -205,7 +205,7 @@ RSpec.describe "Api::V1::Users Create", type: :request do
       request.headers['Accept'] = 'application/json'
       json = JSON.parse(response.body, symbolize_names: true)
       expect(response).to have_http_status(400)
-      expect(json[:error]).to eq(["City can't be blank"])
+      expect(json[:error]).to eq('invalid parameters')
 
       invalid_body_2 = {
                       "email": "whatever2@example.com",
@@ -222,7 +222,7 @@ RSpec.describe "Api::V1::Users Create", type: :request do
       request.headers['Accept'] = 'application/json'
       json = JSON.parse(response.body, symbolize_names: true)
       expect(response).to have_http_status(400)
-      expect(json[:error]).to eq(["State can't be blank"])
+      expect(json[:error]).to eq('invalid parameters')
 
       invalid_body_3 = {
                       "email": "whatever2@example.com",
@@ -239,7 +239,7 @@ RSpec.describe "Api::V1::Users Create", type: :request do
       request.headers['Accept'] = 'application/json'
       json = JSON.parse(response.body, symbolize_names: true)
       expect(response).to have_http_status(400)
-      expect(json[:error]).to eq(["Zipcode can't be blank"])
+      expect(json[:error]).to eq('invalid parameters')
     end
 
     it 'should return 400 if password is too short' do 
@@ -259,7 +259,7 @@ RSpec.describe "Api::V1::Users Create", type: :request do
       request.headers['Accept'] = 'application/json'
       json = JSON.parse(response.body, symbolize_names: true)
       expect(response).to have_http_status(400)
-      expect(json[:error]).to eq(["Password is too short (minimum is 8 characters)"])
+      expect(json[:error]).to eq('invalid parameters')
     end
   end
 end
