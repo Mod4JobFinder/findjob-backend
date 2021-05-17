@@ -537,12 +537,12 @@
           null,
           1,
           1,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
           null,
           null,
           null,
@@ -1006,56 +1006,6 @@
           null
         ]
       },
-      "/Users/kn/Projects/findjob-backend/spec/services/job_sevice_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/kn/Projects/findjob-backend/app/services/job_service.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          2,
-          2,
-          2,
-          null,
-          null,
-          2,
-          null,
-          null,
-          null,
-          null,
-          1,
-          null,
-          1,
-          2,
-          null,
-          null,
-          1,
-          2,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
       "/Users/kn/Projects/findjob-backend/spec/services/salary_service_spec.rb": {
         "lines": [
           1,
@@ -1254,6 +1204,6 @@
         ]
       }
     },
-    "timestamp": 1621270092
+    "timestamp": 1621182931
   }
 }
