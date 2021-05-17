@@ -2,7 +2,8 @@ require 'rails_helper'
 
 RSpec.describe "Api::V1::Salaries Index", type: :request do
   describe 'happy path' do 
-    it 'should return salaries for a given city with valid params', :vcr do 
+    it 'should return salaries for a given city with valid params', :vcr do
+      SalaryFacade.flood_db 
       get api_v1_salaries_path, params: {city: 'denver'}
 
       json = JSON.parse(response.body, symbolize_names: true)
