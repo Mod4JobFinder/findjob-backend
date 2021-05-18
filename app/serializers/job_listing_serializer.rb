@@ -1,4 +1,4 @@
 class JobListingSerializer
   include FastJsonapi::ObjectSerializer
-  attributes :id, :title, :company, :url, :description, :location, :categories, :date
+  attributes :id, :title, :company, :url, :description, :location, :category, :date
 end
