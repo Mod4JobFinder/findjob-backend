@@ -16,11 +16,8 @@ class Api::V1::UsersController < ApplicationController
     @user = User.find_by(email: params[:email].downcase)
     return invalid_params if @user.nil?
     @user.update_attributes(user_update_params)
-    if @user.save
-      render json: {data: 'user successfully updated'}, status: 200
-    else
-      invalid_params
-    end
+    
+    render json: {data: 'user successfully updated'}, status: 200
   end
 
   private

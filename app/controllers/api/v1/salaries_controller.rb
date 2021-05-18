@@ -8,5 +8,5 @@ class Api::V1::SalariesController < ApplicationController
     else 
       invalid_params
     end
-  end 
+  end
 end

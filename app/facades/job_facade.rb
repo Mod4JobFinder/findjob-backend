@@ -17,19 +17,17 @@ class JobFacade
     end
   end
 
-  
+  # def self.db_flood
+  #   cities = SalaryService.get_na_urban_areas.map do |city|
+  #     city.split(',')[0].downcase.gsub(' ', '-').gsub('.', '')
+  #   end.delete_if{ |e| e == 'portland' || e == 'washington' }
 
-  def self.db_flood
-    cities = SalaryService.get_na_urban_areas.map do |city|
-      city.split(',')[0].downcase.gsub(' ', '-').gsub('.', '')
-    end.delete_if{ |e| e == 'portland' || e == 'washington' }
+  #   titles = ['Data Analyst', 'Data Scientist', 'Mobile Developer', 'QA Engineer', 'Sofware Engineer', 'Systems Administrator', 'Web Developer']
 
-    titles = ['Data Analyst', 'Data Scientist', 'Mobile Developer', 'QA Engineer', 'Sofware Engineer', 'Systems Administrator', 'Web Developer']
-
-    cities.each do |city|
-      titles.each do |title|
-        create_job_listings(city, title)
-      end
-    end
-  end
+  #   cities.each do |city|
+  #     titles.each do |title|
+  #       create_job_listings(city, title)
+  #     end
+  #   end
+  # end
 end
