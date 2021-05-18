@@ -4,9 +4,9 @@ class Api::V1::SalariesController < ApplicationController
       @salaries = Salary.where(city: params[:city].downcase)
       @serial = SalarySerializer.new(@salaries)
       
-      render json: {'salaries': @serial}
+      render json: @serial
     else 
       invalid_params
     end
-  end 
+  end
 end

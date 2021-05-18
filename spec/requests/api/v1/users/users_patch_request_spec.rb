@@ -59,6 +59,6 @@ RSpec.describe "Api::V1::Users Update", type: :request do
 
       expect(response).to have_http_status(400)
       expect(json[:error]).to eq('invalid parameters')
-    end 
+    end
   end 
 end 

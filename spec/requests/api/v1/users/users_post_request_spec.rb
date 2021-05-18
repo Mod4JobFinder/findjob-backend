@@ -20,7 +20,10 @@ RSpec.describe "Api::V1::Users Create", type: :request do
 
       json = JSON.parse(response.body, symbolize_names: true)
       expect(response).to have_http_status(201)
-      expect(json[:data]).to eq('success')
+
+      expect(json.keys).to eq([:data])
+      expect(json[:data].keys).to eq(%i[id type attributes])
+      expect(json[:data][:attributes].keys).to eq(%i[email first_name last_name city state zipcode saved_jobs])
     end
   end 
 

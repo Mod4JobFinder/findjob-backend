@@ -5,6 +5,9 @@ Rails.application.routes.draw do
       patch '/users', to: 'users#update'
       post '/sessions', to: 'sessions#create'
       get '/salaries', to: 'salaries#index'
+      get '/jobs', to: 'job_listings#index'
+      post '/saved_jobs', to: 'saved_jobs#create'
+      delete '/saved_jobs', to: 'saved_jobs#destroy'
     end
   end
 end
