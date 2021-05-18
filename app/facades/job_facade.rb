@@ -8,7 +8,7 @@ class JobFacade
         url: listing[:attributes][:link],
         description: listing[:attributes][:description].gsub("**BREAK**", "\n"),
         location: listing[:attributes][:location],
-        categories: listing[:attributes][:category].join(', '),
+        category: listing[:attributes][:category].join(', '),
         date: Date.parse(listing[:attributes][:publish_date]).strftime('%a %B %e, %Y').gsub('  ', ' '),
         search_title: title,
         search_city: city
