@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_18_220758) do
+ActiveRecord::Schema.define(version: 2021_05_18_221415) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 2021_05_18_220758) do
     t.string "search_city"
     t.string "search_title"
     t.string "category"
+    t.string "date"
   end
 
   create_table "salaries", force: :cascade do |t|
