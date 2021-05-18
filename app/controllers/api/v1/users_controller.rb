@@ -5,7 +5,8 @@ class Api::V1::UsersController < ApplicationController
     params[:email] = user_params[:email].downcase
     @user = User.create(user_params)
     if @user.save
-      render json: {data: 'success'}, status: 201
+      @serial = UserSerializer.new(@user)
+      render json: @serial, status: 201
     else
       invalid_params
     end
