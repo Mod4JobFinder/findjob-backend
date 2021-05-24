@@ -33,5 +33,14 @@ RSpec.describe SalaryService, type: :model do
       #   expect(response).to eq([])
       # end
     end
+
+    describe '#money' do 
+      it 'should return an integer as a string formatted as money' do
+        expect(SalaryService.money(8000.5013546)).to eq('$8,000.50')
+        expect(SalaryService.money(20251.36456)).to eq('$20,251.36')
+        expect(SalaryService.money(115235.50465)).to eq('$115,235.50')
+        expect(SalaryService.money(1023456.78465546)).to eq('$1,023,456.78')
+      end 
+    end 
   end 
 end
