@@ -1,6 +1,6 @@
 class JobService
   def self.get_job_listings(city, title = nil)
-    response = conn.get('/jobs') do |f|
+    response = conn.get('/api/v1/jobs') do |f|
       f.params['title'] = title
       f.params['location'] = city 
     end
