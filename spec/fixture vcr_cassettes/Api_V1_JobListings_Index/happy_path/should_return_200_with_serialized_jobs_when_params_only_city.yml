@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://job-microservice.herokuapp.com/jobs?location=denver&title
+    uri: https://job-microservice.herokuapp.com/api/v1/jobs?location=denver&title
     body:
       encoding: US-ASCII
       string: ''
@@ -23,54 +23,280 @@ http_interactions:
       Server:
       - gunicorn
       Date:
-      - Tue, 18 May 2021 20:34:52 GMT
+      - Mon, 24 May 2021 18:00:12 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '179071'
+      - '178070'
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":[{"attributes":{"category":["swift","ios"],"company":"EVS llc","description":"Swift
-        Developer: **BREAK** Location: Westminster, CO**BREAK** Benefits Offered:
-        401k, Dental, Vision, Medical, Unlimited PTO**BREAK** Employment Type: Full
-        time**BREAK** **BREAK** About the Position: **BREAK** The Swift Developer
-        is responsible for migrating the presentation layer of an existing enterprise
-        mobile application from Xamarin to Swift and adding new features as necessary.
-        This app uses indoor mapping technology to help manage warehouse operations.
-        In addition, you will be part of the small iOS team that develops and supports
-        our other existing native Swift application. You will work in an Agile team
-        environment and will take pride in creating iOS magic.**BREAK** **BREAK**
-        Who Will Love This Job: **BREAK** **BREAK** Excited to be a part of a small
-        team**BREAK** Loves the opportunity to learn new skills**BREAK** Excited to
-        make an impact in a growing company**BREAK** **BREAK** **BREAK** What You''ll
-        Do:**BREAK** **BREAK** Migrate existing Xamarin forms application to Swift**BREAK**
-        Manage App store and app release cycles**BREAK** Produce a product that customers
-        love, and represents our brand well**BREAK** Weigh in on the technical feasibility
-        of new features and UI/UX designs**BREAK** Solve hard technical problems**BREAK**
-        Be a great team player with experience working in a team environment. Ability
-        to collaborate closely with other developers**BREAK** **BREAK** You Should
-        Have: **BREAK** **BREAK** 5 years of experience developing iOS applications,
-        and use of storyboards to lay out UI**BREAK** You develop code in a simple,
-        clear way rather than being overly clever and using complex architectures**BREAK**
-        Well versed on Apple'' Human Interface Guidelines and best practices**BREAK**
-        Experience with source control systems (like Git) and code branching  **BREAK**
-        Scrum/Agile development experience **BREAK** **BREAK** To Really Stand Out:
-        **BREAK** **BREAK** Passion for building iOS mobile applications**BREAK**
-        Experience in SaaS enterprise environment**BREAK** Experience with warehousing
-        supply-chain or logistics**BREAK** **BREAK** Who We Are: **BREAK** EVS, a
-        Westminster, CO based enterprise SaaS company, is seeking ambitious and talented
-        individuals looking to start or further their career at an energetic and quickly
-        growing company. Our software runs every aspect of customers warehouse operation.
-        The EVS Development Team is a critical component of our promise to provide
-        exceptional service to our customers. Outstanding performers will have significant
-        opportunity for career advancement within the organization. **BREAK** Physical
-        and Other Requirements: **BREAK** **BREAK** Speak and understand English**BREAK**
-        Excellent interpersonal skills and solid communication**BREAK** Able to multitask,
-        prioritize, and manage time efficiently**BREAK** Self-motivated and self-directed
-        **BREAK** **BREAK** Work Authorization: **BREAK** **BREAK** United States
-        (Required)**BREAK** ","link":"https://stackoverflow.com/jobs/527970/ios-developer-evs-llc?a=2R40WSuMZW12&so_medium=Talent&so_source=TalentApi","location":"Westminster,
+      string: '{"data":[{"attributes":{"category":["node.js","javascript","cloud","angularjs"],"company":"Nelnet","description":"As
+        a Full-stack Developer at Nelnet, you will build the next generation platform
+        in the lending industry. You will work closely with Product Owners, Scrum
+        Masters and other team members to better understand their needs in order to
+        create new products that will impact the life of millions of customers. You
+        will participate the development of cloud native products using microservices
+        architecture and other leading edge technologies and practices.**BREAK**  The
+        IT Software Architect will design enterprise wide cross-functional solutions
+        and provide guidance and leadership to technical teams.**BREAK** **BREAK**
+        Responsibilities:**BREAK** - Lead and/or participate in solution design to
+        satisfy a wide range of business needs.**BREAK** - Act as a consultant with
+        internal and external clients to understand business needs and identify potential
+        solutions.**BREAK** - Provide technical direction, training, and mentoring
+        to technical team members.**BREAK** - Develop and champion Best Practices
+        and Standards in the areas of technology and security.**BREAK** - Provide
+        oversight to ensure adherence to methodologies, best practices and standards.**BREAK**
+        - Keep abreast of advancements and changes in technology and develop an understanding
+        of how new technologies can be leveraged provide business solutions.**BREAK**
+        **BREAK** Qualifications:**BREAK** EDUCATION: Bachelor''s Degree in Computer
+        Science.  **BREAK** **BREAK** EXPERIENCE:**BREAK** 6 years experience in software
+        development with a strong expertise in at least one key competency.**BREAK**
+        2 to 3 years experience as a technical or development leader with a demonstrated
+        ability to deliver medium to large scale technology solutions.  **BREAK**
+        COMPETENCIES \u2013 SKILLS/KNOWLEDGE/ABILITIES:**BREAK** - Strong relational
+        database knowledge.**BREAK** - Understanding of best practices and methods
+        to integrate applications within the organization and with external partners.
+        **BREAK** - In-depth knowledge of the full software development lifecycle;
+        with exposure to agile or iterative approaches to delivery preferred.**BREAK**
+        - Working knowledge of the network and/or server infrastructure required to
+        host an application on the platforms in areas of expertise.**BREAK** - Strong
+        verbal and written communication skill; with the ability to communicate at
+        all levels of the organization.**BREAK** - Ability to quickly learn new technologies
+        and business functions.**BREAK** - Business acumen in proposing feasible business
+        solutions.**BREAK** - Self-directed; highly motivated with the ability to
+        motivate and inspire team members.**BREAK** - Ability to obtain a security
+        clearance.","link":"https://stackoverflow.com/jobs/525027/it-software-architect-nelnet?a=2Q4OXiYC8B3i&so_medium=Talent&so_source=TalentApi","location":"Centennial,
+        CO","publish_date":"Sun May 23 18:28:00 2021","title":"IT Software Architect
+        at Nelnet (Centennial, CO) (allows remote)"},"id":"525027","type":"job_post"},{"attributes":{"category":["sql","python","aws","lambda","amazon-cloudformation"],"company":"STARZ","description":"Summary
+        of Position**BREAK** The STARZ Data Products & Engineering team is seeking
+        a software engineer who''s passionate about drawing a thin line from data
+        to insight and exposing that insight to internal users to support important
+        business decisions. You''ll be building applications that give internal users
+        insight into what audiences to target, how original and licensed content is
+        likely to perform in the Starz ecosystem and beyond, and helping us to integrate
+        disparate signals into a clear picture of where the organization is at and
+        where we can go. We''re building out a system of experimentation so teams
+        can use that picture to form hypotheses, test them, and easily see the results.
+        Our users range from extremely technical (providing us with models to run,
+        and wanting tables or files in return) to less technical (providing inputs
+        via a UI or spreadsheet and expecting results displayed in-line or in a report).
+        As part of our work to enable the organization to make decisions with data,
+        we''re building out a data processing framework for use by internal analyst
+        teams that lets them harness the power of the data engineering technology
+        we build, while also providing a clear, understandable UI and getting out
+        of their way. This is an opportunity to exercise your technical skills with
+        a highly skilled team from a variety of diverse backgrounds while helping
+        every aspect of our business to be more efficient and more data-driven.**BREAK**
+        Responsibilities**BREAK** **BREAK** Work with product and stakeholder teams
+        to identify ways to improve their workflows and own improving those workflows
+        through problem discovery, solution design, feature implementation, user testing,
+        and iterative feature improvement**BREAK** Design interfaces that allow users
+        to easily understand complex relationships, visualize trends, and explore
+        forecasted scenarios**BREAK** Build analytics tools that provide actionable
+        insights into customer acquisition, retention, behavior and other key business
+        performance metrics**BREAK** Work with data engineers, data scientists, and
+        other development teams to deliver data driven applications with high availability,
+        low latency, and high scalability utilizing microservice, serverless, and
+        event-driven architectures**BREAK** Continue to build out our data processing
+        framework, and expand it to support less and less technical users through
+        a simple, understandable interface**BREAK** Employ a variety of languages,
+        tools and techniques to marry systems and the data generated from those systems
+        together to maximize the strategic value of the data**BREAK** Recommend and
+        implement ways to improve/ensure data reliability, efficiency, and quality**BREAK**
+        Identify, design and implement internal process improvements: automating manual
+        processes, optimizing data-driven decision making, re-designing infrastructure
+        for greater scalability, etc.**BREAK** Be prepared to translate findings to
+        key stakeholders**BREAK** Work in a heavily collaborative environment, taking
+        on a variety of roles when necessary with a positive attitude**BREAK** **BREAK**
+        Education & Experience**BREAK** 4+ years working directly as a member of a
+        technical team, preferably developing/supporting/innovating for a consumer-facing
+        analytics product.**BREAK** Required Skills:**BREAK** **BREAK** Languages
+        (preferred): Typescript / Javascript, Python, SQL, C#**BREAK** Front-end Frameworks:
+        React, Angular (nice to have)**BREAK** Orchestration: AWS EC2/ECS/Lambda/Step
+        Functions/EKS/EMR, Kubernetes, docker, CloudFormation, CDK**BREAK** Database
+        Systems (nice to have): Snowflake, Aurora, DynamoDB, MySQL, PostgreSQL, SQL
+        Server**BREAK** Data Processing (nice to have): Spark, Spark Streaming, Kafka,
+        Kinesis, Pandas, Airflow**BREAK** **BREAK** Our Benefits**BREAK** **BREAK**
+        Full Coverage \u2013 Medical, Vision, and Dental**BREAK** Work/Life Balance
+        \u2013 generous sick days, vacation days, 11 holidays, and Impact Day**BREAK**
+        401(k) company matching**BREAK** Reimbursement \u2013Rideshare Program and
+        Tuition (up to graduate degree)**BREAK** **BREAK** About the Company**BREAK**
+        Starz (www.starz.com), a Lionsgate company (NYSE: LGF.A, LGF.B), is a leading
+        global media and entertainment company that produces and distributes premium
+        streaming content to worldwide audiences across subscription television platforms.
+        Starz is home to the flagship domestic STARZ&reg; brand, STARZ ENCORE, 17
+        premium pay TV channels and the associated on-demand and online services,
+        including the highly rated STARZ app. With the launch of the STARZPLAY international
+        premium streaming platform and STARZ PLAY Arabia, Starz is expanding its global
+        footprint in a growing number of territories. Sold through multichannel video
+        distributors, including cable operators, satellite television providers, telecommunications
+        companies, and other online and digital platforms, Starz offers subscribers
+        more than 7,500 distinct premium television episodes and feature films, including
+        STARZ Original series, first-run movies and other popular programming.**BREAK**
+        Business Unit Overview**BREAK** StarzWith the Company aligning its studio
+        operations behind the growth of its streaming business, Starz has become one
+        of the pre-eminent modern premium global streaming platforms. Offering subscribers
+        more than 7.500 television episodes, including Starz original series and provocative
+        documentaries, along with a broad catalogue of first-run movies, Starz is
+        taking the lead in delivering relatable premium content that makes it the
+        platform of choice among a wide spectrum of female, African-American and other
+        historically underserved audiences. Its focused brand, premium content and
+        freedom from legacy relationships position Starz at the forefront of the new
+        bundles emerging throughout the media ecosystem, a compelling value proposition
+        to complement virtually every kind of subscription platform. Distinguished
+        by its successful and focused content strategy, top programming, exceptional
+        curation and speed to market, Starz has quickly scaled its platform to become
+        one of the most widely distributed and fastest-growing OTT services in the
+        world, with OTT subscribers making up more than half of its global subscriber
+        base. The Starzplay International premium subscription service offers a &ldquo;best
+        of global SVOD&rdquo; content portfolio in more than 50 countries throughout
+        Europe, Latin America, Canada, Japan and India through a bespoke and expanding
+        network of distribution partners. The Starzplay Arabia joint venture is one
+        of the leading SVOD operators in the fast-growing Middle East and North Africa
+        region. The proprietary and highly-rated Starz app, a proven hit with U.S.
+        audiences, continues to roll out internationally.  **BREAK** Our Benefits**BREAK**
+        **BREAK** Full Coverage \u2013 Medical, Vision, and Dental**BREAK** Annual
+        discretionary bonus and merit increase**BREAK** Work/Life Balance \u2013 generous
+        sick days, vacation days, holidays, and Impact Day**BREAK** 401(k) company
+        matching**BREAK** Tuition Reimbursement (up to graduate degree)**BREAK** **BREAK**
+        Compensation**BREAK** $109,000 - $140,700**BREAK** EEO Statement**BREAK**
+        Lionsgate is an equal employment opportunity employer. All employees and applicants
+        are evaluated on the basis of their qualifications, consistent with applicable
+        state and federal laws. In addition, Lionsgate will provide reasonable accommodations
+        for qualified individuals with disabilities. Lionsgate will consider for employment
+        qualified applicants with criminal histories in a manner consistent with the
+        requirements of applicable state and federal law.","link":"https://stackoverflow.com/jobs/474776/sr-software-engineer-data-products-engineering-starz?a=2zdXsrHdiiti&so_medium=Talent&so_source=TalentApi","location":"Englewood,
+        CO","publish_date":"Sat May 22 18:46:58 2021","title":"Sr. Software Engineer,
+        Data Products/Engineering at STARZ (Englewood, CO)"},"id":"474776","type":"job_post"},{"attributes":{"category":["hadoop","bigdata","cloudera"],"company":"Lumen","description":"Job
+        Description Print Preview**BREAK** Job Summary**BREAK** Looking for a Lead
+        Hadoop Administrator to join existing team in overseeing operations on the
+        Cloudera data lake at CenturyLink.  This is an administrative role, less wrtiing
+        code but more configuring, supporting, maintaining, and monitoring the Hadoop
+        Clusters.  Lead in the team effort to design, develop, code, test, and debug
+        new complex software or significant enhancements.  Lead review of input for
+        documentation of new or existing software.  Apply existing, and introduce
+        new, approved technologies to develop solutions.  Lead others in the application
+        of Hadoop/Big Data principles, theories, tools, and concepts to complete projects.  May
+        lead team to select and manage vendors.  **BREAK**  Job Description**BREAK**
+        **BREAK** Works with the Technical Director, Technical Architect, App/Web
+        Developer, Database Administrator, System Administrator, Project Management,
+        Account Management and Creative to create and support big data clusters and
+        applications, completing all requirements and meeting usability expectations**BREAK**
+        Partners with Technology personnel to develop creative marketing technology
+        solutions in support of meeting client expectations**BREAK** Estimates timeline
+        for assigned projects and ensures that work is completed with the estimate
+        given**BREAK** Provides leadership in the administration and implementation
+        of short- and long-term technology plans and related policies and procedures**BREAK**
+        Takes a lead role in establishing and implementing standards that will facilitate
+        a quality IT infrastructure all clients**BREAK** Responsible for Hadoop clusters
+        including components such as Cloudera (CDH & CM), Kafka, Impala, Hive, Spark,
+        HDFS, HBase, Oozie, Sqoop, Flume, Zookeeper, YARN, etc.**BREAK** Performance
+        tuning of Hadoop clusters, job performance and capacity planning. **BREAK**
+        Responsible for implementation and ongoing administration of Hadoop infrastructure,
+        including off hours on call support.**BREAK** Management of TLS/SSL certificates
+        and implementation of Kerberos. **BREAK** Organizes Hadoop cluster access
+        through Active Directory**BREAK** HDFS support and maintenance, Including
+        archiving and management of data on an object store (S3A)**BREAK** Pair with
+        other teams like infrastructure, network, database, application and business
+        intelligence to ensure high availabitlity. **BREAK** Work closely with development
+        on creating new applactions using creative and new options.**BREAK** Work
+        directly with Vendors on escalations. **BREAK** **BREAK** Qualifications**BREAK**
+        **BREAK** Fully seasoned Hadoop Administrator with typically 5+ years professional
+        experience with a Bachelor''s Degree or equivalent education and experience.**BREAK**
+        2-3 years with a Master''s Degree.**BREAK** 3-4 years experience with Cloudera
+        Hadoop clusters.**BREAK** ","link":"https://stackoverflow.com/jobs/376902/lead-hadoop-admin-lumen?a=22oSn2l1KgIo&so_medium=Talent&so_source=TalentApi","location":"Broomfield,
+        CO","publish_date":"Wed May 19 21:57:09 2021","title":"Lead Hadoop Admin at
+        Lumen (Broomfield, CO)"},"id":"376902","type":"job_post"},{"attributes":{"category":["qa","automation","python","cucumber","reactjs"],"company":"Alfi
+        Inc.","description":"The Opportunity**BREAK** Excellent opportunity for a
+        Senior Quality Assurance Automation Engineer skilled in Python and Gherkin
+        to contribute to the development of the company''s next-gen SaaS and Edge
+        product Alfi.**BREAK** As the QA Automation Engineer, you will have the chance
+        to take ownership of code quality and test automation for the Software Engineering
+        team. You will be responsible for identifying software application weaknesses
+        and target areas, creating test plans, writing test scripts, and working with
+        the DevOps team to automate tests as part of the CI pipeline. You will also
+        be expected to participate in SCRUM meetings, help the team learn better testable
+        coding practices, and you''ll have the opportunity to select some of your
+        own technologies to present a pilot to the team for the automation of Functional,
+        Integration, Regression, E2E tests, etc.**BREAK** This is an exciting opportunity
+        in a fast-growing startup enterprise for anyone who is looking to advance
+        their career with the expectation of contributing to our company values &
+        team-culture. If you''re looking to get in with an edge company at a great
+        time, with a great team of brilliant and motivated engineers, please read
+        on.**BREAK** **BREAK** **BREAK** **BREAK** **BREAK** The Responsibilities**BREAK**
+        **BREAK** Ability to write test plans and test cases**BREAK** Perform a variety
+        of QA related support activities for the Software Engineering team, automating
+        when possible**BREAK** Work closely with our DevOps team to initiate and keep
+        up-to-date best practice tools and automation patterns**BREAK** Create and
+        execute a strategy for identifying and automating the most effective tests,
+        continually improving**BREAK** Ability to operate in a fast paced startup
+        environment**BREAK** Keep aware of QA industry trends and techniques and communicate
+        opportunities to improve our processes**BREAK** **BREAK** The Requirements**BREAK**
+        **BREAK** 3+ years of experience as a software developer**BREAK** 5+ years
+        of experience automating tests as part of the software development cycle**BREAK**
+        Previous experience as a QA Automation Engineer working in a SCRUM team**BREAK**
+        Experience with integration, regression and end-to-end testing methodologies**BREAK**
+        Ability to write test scripts in Python and Gherkin/Cucumber**BREAK** Experience
+        testing projects written in Python and JavaScript**BREAK** Experience testing
+        RESTful APIs**BREAK** Experience with tools like Jira, Jenkins and Github**BREAK**
+        Excellent problem solving and analytical skills**BREAK** Attention to detail
+        and great communication skills**BREAK** Must work in the Downtown Denver office**BREAK**
+        **BREAK** The Bonuses**BREAK** **BREAK** Experience with Selenium**BREAK**
+        Experience with code quality / code coverage / security vulnerability scanning
+        tools like SonarQube**BREAK** Experience running tests on AWS**BREAK** Experience
+        with SQL and NoSQL databases**BREAK** Familiarity with React and other JavaScript
+        frameworks**BREAK** **BREAK** **BREAK** **BREAK** **BREAK** **BREAK** The
+        Benefits**BREAK** If your skillset aligns with the qualifications above, then
+        we welcome your application to work with the best, rapidly growing team here
+        at Alfi. Everyone at Alfi acknowledges that hard work, bravery, honesty, accountability
+        and dignity are universal values that benefit everyone and empower the individual
+        to accomplish even the toughest goals. We invite you to join our growing family
+        of engineers on this journey.**BREAK** **BREAK** Competitive Salary**BREAK**
+        Stock Options**BREAK** Two Weeks Paid Vacation Leave**BREAK** Healthcare Benefits**BREAK**
+        Snacks and Drinks**BREAK** ","link":"https://stackoverflow.com/jobs/520178/senior-qa-automation-engineer-alfi-inc?a=2OrZPjasXVpC&so_medium=Talent&so_source=TalentApi","location":"Denver,
+        CO","publish_date":"Tue May 18 22:29:54 2021","title":"Senior QA Automation
+        Engineer at Alfi Inc. (Denver, CO)"},"id":"520178","type":"job_post"},{"attributes":{"category":["swift","ios"],"company":"EVS
+        llc","description":"Swift Developer: **BREAK** Location: Westminster, CO**BREAK**
+        Benefits Offered: 401k, Dental, Vision, Medical, Unlimited PTO**BREAK** Employment
+        Type: Full time**BREAK** **BREAK** About the Position: **BREAK** The Swift
+        Developer is responsible for migrating the presentation layer of an existing
+        enterprise mobile application from Xamarin to Swift and adding new features
+        as necessary. This app uses indoor mapping technology to help manage warehouse
+        operations. In addition, you will be part of the small iOS team that develops
+        and supports our other existing native Swift application. You will work in
+        an Agile team environment and will take pride in creating iOS magic.**BREAK**
+        **BREAK** Who Will Love This Job: **BREAK** **BREAK** Excited to be a part
+        of a small team**BREAK** Loves the opportunity to learn new skills**BREAK**
+        Excited to make an impact in a growing company**BREAK** **BREAK** **BREAK**
+        What You''ll Do:**BREAK** **BREAK** Migrate existing Xamarin forms application
+        to Swift**BREAK** Manage App store and app release cycles**BREAK** Produce
+        a product that customers love, and represents our brand well**BREAK** Weigh
+        in on the technical feasibility of new features and UI/UX designs**BREAK**
+        Solve hard technical problems**BREAK** Be a great team player with experience
+        working in a team environment. Ability to collaborate closely with other developers**BREAK**
+        **BREAK** You Should Have: **BREAK** **BREAK** 5 years of experience developing
+        iOS applications, and use of storyboards to lay out UI**BREAK** You develop
+        code in a simple, clear way rather than being overly clever and using complex
+        architectures**BREAK** Well versed on Apple'' Human Interface Guidelines and
+        best practices**BREAK** Experience with source control systems (like Git)
+        and code branching  **BREAK** Scrum/Agile development experience **BREAK**
+        **BREAK** To Really Stand Out: **BREAK** **BREAK** Passion for building iOS
+        mobile applications**BREAK** Experience in SaaS enterprise environment**BREAK**
+        Experience with warehousing supply-chain or logistics**BREAK** **BREAK** Who
+        We Are: **BREAK** EVS, a Westminster, CO based enterprise SaaS company, is
+        seeking ambitious and talented individuals looking to start or further their
+        career at an energetic and quickly growing company. Our software runs every
+        aspect of customers warehouse operation. The EVS Development Team is a critical
+        component of our promise to provide exceptional service to our customers.
+        Outstanding performers will have significant opportunity for career advancement
+        within the organization. **BREAK** Physical and Other Requirements: **BREAK**
+        **BREAK** Speak and understand English**BREAK** Excellent interpersonal skills
+        and solid communication**BREAK** Able to multitask, prioritize, and manage
+        time efficiently**BREAK** Self-motivated and self-directed **BREAK** **BREAK**
+        Work Authorization: **BREAK** **BREAK** United States (Required)**BREAK**
+        ","link":"https://stackoverflow.com/jobs/527970/ios-developer-evs-llc?a=2R40WSuMZW12&so_medium=Talent&so_source=TalentApi","location":"Westminster,
         CO","publish_date":"Tue May 18 18:14:20 2021","title":"iOS Developer at EVS
         llc (Westminster, CO)"},"id":"527970","type":"job_post"},{"attributes":{"category":["c#","mongodb","containers","openapi","python"],"company":"SWIMLANE
         INC","description":"Do you have an interest and desire to work with cutting
@@ -1964,246 +2190,8 @@ http_interactions:
         sex, affectional or sexual orientation.**BREAK** Red Rock Tech Solutions,
         LLC is An Equal Opportunity Employer","link":"https://stackoverflow.com/jobs/525310/senior-web-developer-react-and-mobile-developer-red-rock-technology?a=2QaHMSuWTTXO&so_medium=Talent&so_source=TalentApi","location":"Denver,
         CO","publish_date":"Mon Apr 26 23:06:23 2021","title":"Senior Web Developer
-        React and Mobile Developer React Native at Red Rock technology (Denver, CO)"},"id":"525310","type":"job_post"},{"attributes":{"category":["node.js","javascript","cloud","angularjs"],"company":"Nelnet","description":"As
-        a Full-stack Developer at Nelnet, you will build the next generation platform
-        in the lending industry. You will work closely with Product Owners, Scrum
-        Masters and other team members to better understand their needs in order to
-        create new products that will impact the life of millions of customers. You
-        will participate the development of cloud native products using microservices
-        architecture and other leading edge technologies and practices.**BREAK**  The
-        IT Software Architect will design enterprise wide cross-functional solutions
-        and provide guidance and leadership to technical teams.**BREAK** **BREAK**
-        Responsibilities:**BREAK** - Lead and/or participate in solution design to
-        satisfy a wide range of business needs.**BREAK** - Act as a consultant with
-        internal and external clients to understand business needs and identify potential
-        solutions.**BREAK** - Provide technical direction, training, and mentoring
-        to technical team members.**BREAK** - Develop and champion Best Practices
-        and Standards in the areas of technology and security.**BREAK** - Provide
-        oversight to ensure adherence to methodologies, best practices and standards.**BREAK**
-        - Keep abreast of advancements and changes in technology and develop an understanding
-        of how new technologies can be leveraged provide business solutions.**BREAK**
-        **BREAK** Qualifications:**BREAK** EDUCATION: Bachelor''s Degree in Computer
-        Science.  **BREAK** **BREAK** EXPERIENCE:**BREAK** 6 years experience in software
-        development with a strong expertise in at least one key competency.**BREAK**
-        2 to 3 years experience as a technical or development leader with a demonstrated
-        ability to deliver medium to large scale technology solutions.  **BREAK**
-        COMPETENCIES \u2013 SKILLS/KNOWLEDGE/ABILITIES:**BREAK** - Strong relational
-        database knowledge.**BREAK** - Understanding of best practices and methods
-        to integrate applications within the organization and with external partners.
-        **BREAK** - In-depth knowledge of the full software development lifecycle;
-        with exposure to agile or iterative approaches to delivery preferred.**BREAK**
-        - Working knowledge of the network and/or server infrastructure required to
-        host an application on the platforms in areas of expertise.**BREAK** - Strong
-        verbal and written communication skill; with the ability to communicate at
-        all levels of the organization.**BREAK** - Ability to quickly learn new technologies
-        and business functions.**BREAK** - Business acumen in proposing feasible business
-        solutions.**BREAK** - Self-directed; highly motivated with the ability to
-        motivate and inspire team members.**BREAK** - Ability to obtain a security
-        clearance.","link":"https://stackoverflow.com/jobs/525027/it-software-architect-nelnet?a=2Q4OXiYC8B3i&so_medium=Talent&so_source=TalentApi","location":"Centennial,
-        CO","publish_date":"Fri Apr 23 18:28:00 2021","title":"IT Software Architect
-        at Nelnet (Centennial, CO) (allows remote)"},"id":"525027","type":"job_post"},{"attributes":{"category":["sql","python","aws","lambda","amazon-cloudformation"],"company":"STARZ","description":"Summary
-        of Position**BREAK** The STARZ Data Products & Engineering team is seeking
-        a software engineer who''s passionate about drawing a thin line from data
-        to insight and exposing that insight to internal users to support important
-        business decisions. You''ll be building applications that give internal users
-        insight into what audiences to target, how original and licensed content is
-        likely to perform in the Starz ecosystem and beyond, and helping us to integrate
-        disparate signals into a clear picture of where the organization is at and
-        where we can go. We''re building out a system of experimentation so teams
-        can use that picture to form hypotheses, test them, and easily see the results.
-        Our users range from extremely technical (providing us with models to run,
-        and wanting tables or files in return) to less technical (providing inputs
-        via a UI or spreadsheet and expecting results displayed in-line or in a report).
-        As part of our work to enable the organization to make decisions with data,
-        we''re building out a data processing framework for use by internal analyst
-        teams that lets them harness the power of the data engineering technology
-        we build, while also providing a clear, understandable UI and getting out
-        of their way. This is an opportunity to exercise your technical skills with
-        a highly skilled team from a variety of diverse backgrounds while helping
-        every aspect of our business to be more efficient and more data-driven.**BREAK**
-        Responsibilities**BREAK** **BREAK** Work with product and stakeholder teams
-        to identify ways to improve their workflows and own improving those workflows
-        through problem discovery, solution design, feature implementation, user testing,
-        and iterative feature improvement**BREAK** Design interfaces that allow users
-        to easily understand complex relationships, visualize trends, and explore
-        forecasted scenarios**BREAK** Build analytics tools that provide actionable
-        insights into customer acquisition, retention, behavior and other key business
-        performance metrics**BREAK** Work with data engineers, data scientists, and
-        other development teams to deliver data driven applications with high availability,
-        low latency, and high scalability utilizing microservice, serverless, and
-        event-driven architectures**BREAK** Continue to build out our data processing
-        framework, and expand it to support less and less technical users through
-        a simple, understandable interface**BREAK** Employ a variety of languages,
-        tools and techniques to marry systems and the data generated from those systems
-        together to maximize the strategic value of the data**BREAK** Recommend and
-        implement ways to improve/ensure data reliability, efficiency, and quality**BREAK**
-        Identify, design and implement internal process improvements: automating manual
-        processes, optimizing data-driven decision making, re-designing infrastructure
-        for greater scalability, etc.**BREAK** Be prepared to translate findings to
-        key stakeholders**BREAK** Work in a heavily collaborative environment, taking
-        on a variety of roles when necessary with a positive attitude**BREAK** **BREAK**
-        Education & Experience**BREAK** 4+ years working directly as a member of a
-        technical team, preferably developing/supporting/innovating for a consumer-facing
-        analytics product.**BREAK** Required Skills:**BREAK** **BREAK** Languages
-        (preferred): Typescript / Javascript, Python, SQL, C#**BREAK** Front-end Frameworks:
-        React, Angular (nice to have)**BREAK** Orchestration: AWS EC2/ECS/Lambda/Step
-        Functions/EKS/EMR, Kubernetes, docker, CloudFormation, CDK**BREAK** Database
-        Systems (nice to have): Snowflake, Aurora, DynamoDB, MySQL, PostgreSQL, SQL
-        Server**BREAK** Data Processing (nice to have): Spark, Spark Streaming, Kafka,
-        Kinesis, Pandas, Airflow**BREAK** **BREAK** Our Benefits**BREAK** **BREAK**
-        Full Coverage \u2013 Medical, Vision, and Dental**BREAK** Work/Life Balance
-        \u2013 generous sick days, vacation days, 11 holidays, and Impact Day**BREAK**
-        401(k) company matching**BREAK** Reimbursement \u2013Rideshare Program and
-        Tuition (up to graduate degree)**BREAK** **BREAK** About the Company**BREAK**
-        Starz (www.starz.com), a Lionsgate company (NYSE: LGF.A, LGF.B), is a leading
-        global media and entertainment company that produces and distributes premium
-        streaming content to worldwide audiences across subscription television platforms.
-        Starz is home to the flagship domestic STARZ&reg; brand, STARZ ENCORE, 17
-        premium pay TV channels and the associated on-demand and online services,
-        including the highly rated STARZ app. With the launch of the STARZPLAY international
-        premium streaming platform and STARZ PLAY Arabia, Starz is expanding its global
-        footprint in a growing number of territories. Sold through multichannel video
-        distributors, including cable operators, satellite television providers, telecommunications
-        companies, and other online and digital platforms, Starz offers subscribers
-        more than 7,500 distinct premium television episodes and feature films, including
-        STARZ Original series, first-run movies and other popular programming.**BREAK**
-        Business Unit Overview**BREAK** StarzWith the Company aligning its studio
-        operations behind the growth of its streaming business, Starz has become one
-        of the pre-eminent modern premium global streaming platforms. Offering subscribers
-        more than 7.500 television episodes, including Starz original series and provocative
-        documentaries, along with a broad catalogue of first-run movies, Starz is
-        taking the lead in delivering relatable premium content that makes it the
-        platform of choice among a wide spectrum of female, African-American and other
-        historically underserved audiences. Its focused brand, premium content and
-        freedom from legacy relationships position Starz at the forefront of the new
-        bundles emerging throughout the media ecosystem, a compelling value proposition
-        to complement virtually every kind of subscription platform. Distinguished
-        by its successful and focused content strategy, top programming, exceptional
-        curation and speed to market, Starz has quickly scaled its platform to become
-        one of the most widely distributed and fastest-growing OTT services in the
-        world, with OTT subscribers making up more than half of its global subscriber
-        base. The Starzplay International premium subscription service offers a &ldquo;best
-        of global SVOD&rdquo; content portfolio in more than 50 countries throughout
-        Europe, Latin America, Canada, Japan and India through a bespoke and expanding
-        network of distribution partners. The Starzplay Arabia joint venture is one
-        of the leading SVOD operators in the fast-growing Middle East and North Africa
-        region. The proprietary and highly-rated Starz app, a proven hit with U.S.
-        audiences, continues to roll out internationally.  **BREAK** Our Benefits**BREAK**
-        **BREAK** Full Coverage \u2013 Medical, Vision, and Dental**BREAK** Annual
-        discretionary bonus and merit increase**BREAK** Work/Life Balance \u2013 generous
-        sick days, vacation days, holidays, and Impact Day**BREAK** 401(k) company
-        matching**BREAK** Tuition Reimbursement (up to graduate degree)**BREAK** **BREAK**
-        Compensation**BREAK** $109,000 - $140,700**BREAK** EEO Statement**BREAK**
-        Lionsgate is an equal employment opportunity employer. All employees and applicants
-        are evaluated on the basis of their qualifications, consistent with applicable
-        state and federal laws. In addition, Lionsgate will provide reasonable accommodations
-        for qualified individuals with disabilities. Lionsgate will consider for employment
-        qualified applicants with criminal histories in a manner consistent with the
-        requirements of applicable state and federal law.","link":"https://stackoverflow.com/jobs/474776/sr-software-engineer-data-products-engineering-starz?a=2zdXsrHdiiti&so_medium=Talent&so_source=TalentApi","location":"Englewood,
-        CO","publish_date":"Thu Apr 22 18:46:58 2021","title":"Sr. Software Engineer,
-        Data Products/Engineering at STARZ (Englewood, CO)"},"id":"474776","type":"job_post"},{"attributes":{"category":["typescript","elixir","graphql","react"],"company":"Blinker
-        Inc.","description":"Senior Backend EngineerBlinker has developed a patented,
-        differentiated transactional platform and operations to support sellers, buyers
-        and borrowers in the Automotive sector.  Specifically, Blinker provides end-to-end
-        digital transactional capabilities for purchase/sale transactions and related
-        finance and insurance services to buyers on the platform.  Leveraging proprietary
-        image recognition, AI and back office technology, Blinker delivers a streamlined
-        user experience including vehicle valuation, listing, loan pre-qualification,
-        lien payoff, ownership transfer, loan funding, insurance coverage, and more.  Blinker
-        has generated highly-rated customer satisfaction scores with customers receiving
-        substantial economic benefits compared to conventional dealer channels.We
-        are looking for a senior backend engineer with core software engineering skills,
-        who is looking to continue developing backend applications while growing their
-        frontend application development, and cloud infrastructure skills.  We are
-        partnering with one of the biggest players in the automotive space to provide
-        a SaaS-like vehicle transactions platform. If building a modern and high-volume
-        SaaS platform sounds interesting, join us!What you''ll be doing:Working on
-        small, autonomous, results-oriented project teams to deliver high-value software.Building
-        backend features and functionality with Elixir and Phoenix.Building user interfaces
-        for end users and platform administrators with Typescript and React.Operating
-        with and iterating on our cloud infrastructure from CI/CD to monitoring and
-        metrics.What we''re looking for:A love of learning and growing technical breadth
-        and depth.Senior-level experience with any mainstream programming languages,
-        with a passion for modern but pragmatic code.Individuals looking for a high
-        performing team, where we support each other while holding ourselves and each
-        other accountable.Bonus Points:Experience with Phoenix/Elixir.Experience with
-        React/TypeScript.Experience with Kubernetes, Terraform, Docker, or other modern
-        DevOps tools.Experience with building multi-tenant, best-practices SaaS products.About
-        Blinker Engineering:Our Engineering Team Core ValuesEngineering @ BlinkerWhy
-        Blinker?Highly competitive benefits - We regularly review our compensation
-        brackets to make sure they are highly competitive with the top 30% of the
-        Denver market. We have high expectations of our engineers, and we want to
-        make sure they are rewarded for meeting them. Our benefits package is great
-        (including fantastic health insurance), and we offer unlimited paid-time-off.
-        We offer stock options to share in the success of the business. And of course,
-        we have the typical startup on-site goodies like snacks, beer, and even a
-        cold-brew coffee tap.Modern technology with quality - We try to stay ahead
-        of the technology curve, while being pragmatic about production readiness
-        and community support. We care deeply about developer happiness, productivity,
-        and experience .We are heavily investing in Elixir, an amazing functional
-        language built on top of Erlang and the BEAM VM. We are also heavily investing
-        in Typescript, a flexibly typed language that''s fully interoperable with
-        JavaScript. We use modern DevOps tools like Terraform, Docker, Kubernetes,
-        CircleCi, as well as cloud hosting on AWS for a great developer operations
-        experience. We apply various testing strategies to ensure our code continues
-        to meet functional requirements, and retains its high quality as it grows.Develop
-        your career - We take career development seriously. We have three main paths
-        for engineers (Core Contributor, Technical Leadership, People Leadership)
-        and each of those has multiple titles, with compensation brackets and associated
-        responsibilities and opportunities. We integrate feedback through manager
-        1v1s, performance reviews, and anonymous engineering team surveys. We want
-        our engineers to succeed and not only build great things at Blinker, but significantly
-        grow their careers at the same time.Healthy, transparent, results-oriented
-        workplace - We try to limit heavy-handed processes and overly prescriptive
-        planning. We limit meetings, favoring ad-hoc and proactive communication.
-        We care deeply about the team \"vibe\" and ensure we have an inclusive, fun,
-        and engaging environment for everyone. We believe information is critical
-        for our team to succeed, and we build tools to democratize data and support
-        an open and honest environment. In our autonomous workplace, engineers make
-        important decisions everyday and must feel they have the right amount of information
-        to make those decisions - which is why we favor transparency.","link":"https://stackoverflow.com/jobs/524641/senior-back-end-engineer-blinker-inc?a=2PWNlaoPSI7u&so_medium=Talent&so_source=TalentApi","location":"Denver,
-        CO","publish_date":"Tue Apr 20 16:55:43 2021","title":"Senior Back End Engineer
-        at Blinker Inc. (Denver, CO) (allows remote)"},"id":"524641","type":"job_post"},{"attributes":{"category":["hadoop","bigdata","cloudera"],"company":"Lumen","description":"Job
-        Description Print Preview**BREAK** Job Summary**BREAK** Looking for a Lead
-        Hadoop Administrator to join existing team in overseeing operations on the
-        Cloudera data lake at CenturyLink.  This is an administrative role, less wrtiing
-        code but more configuring, supporting, maintaining, and monitoring the Hadoop
-        Clusters.  Lead in the team effort to design, develop, code, test, and debug
-        new complex software or significant enhancements.  Lead review of input for
-        documentation of new or existing software.  Apply existing, and introduce
-        new, approved technologies to develop solutions.  Lead others in the application
-        of Hadoop/Big Data principles, theories, tools, and concepts to complete projects.  May
-        lead team to select and manage vendors.  **BREAK**  Job Description**BREAK**
-        **BREAK** Works with the Technical Director, Technical Architect, App/Web
-        Developer, Database Administrator, System Administrator, Project Management,
-        Account Management and Creative to create and support big data clusters and
-        applications, completing all requirements and meeting usability expectations**BREAK**
-        Partners with Technology personnel to develop creative marketing technology
-        solutions in support of meeting client expectations**BREAK** Estimates timeline
-        for assigned projects and ensures that work is completed with the estimate
-        given**BREAK** Provides leadership in the administration and implementation
-        of short- and long-term technology plans and related policies and procedures**BREAK**
-        Takes a lead role in establishing and implementing standards that will facilitate
-        a quality IT infrastructure all clients**BREAK** Responsible for Hadoop clusters
-        including components such as Cloudera (CDH & CM), Kafka, Impala, Hive, Spark,
-        HDFS, HBase, Oozie, Sqoop, Flume, Zookeeper, YARN, etc.**BREAK** Performance
-        tuning of Hadoop clusters, job performance and capacity planning. **BREAK**
-        Responsible for implementation and ongoing administration of Hadoop infrastructure,
-        including off hours on call support.**BREAK** Management of TLS/SSL certificates
-        and implementation of Kerberos. **BREAK** Organizes Hadoop cluster access
-        through Active Directory**BREAK** HDFS support and maintenance, Including
-        archiving and management of data on an object store (S3A)**BREAK** Pair with
-        other teams like infrastructure, network, database, application and business
-        intelligence to ensure high availabitlity. **BREAK** Work closely with development
-        on creating new applactions using creative and new options.**BREAK** Work
-        directly with Vendors on escalations. **BREAK** **BREAK** Qualifications**BREAK**
-        **BREAK** Fully seasoned Hadoop Administrator with typically 5+ years professional
-        experience with a Bachelor''s Degree or equivalent education and experience.**BREAK**
-        2-3 years with a Master''s Degree.**BREAK** 3-4 years experience with Cloudera
-        Hadoop clusters.**BREAK** ","link":"https://stackoverflow.com/jobs/376902/lead-hadoop-admin-lumen?a=22oSn2l1KgIo&so_medium=Talent&so_source=TalentApi","location":"Broomfield,
-        CO","publish_date":"Mon Apr 19 21:57:09 2021","title":"Lead Hadoop Admin at
-        Lumen (Broomfield, CO)"},"id":"376902","type":"job_post"}]}
+        React and Mobile Developer React Native at Red Rock technology (Denver, CO)"},"id":"525310","type":"job_post"}]}
 
         '
-  recorded_at: Tue, 18 May 2021 20:34:52 GMT
+  recorded_at: Mon, 24 May 2021 18:00:12 GMT
 recorded_with: VCR 6.0.0

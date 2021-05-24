@@ -28,12 +28,22 @@ class SalaryService
         if job == salary['job']['title']
           final_jobs << {
             title: salary['job']['title'],
-            min: sprintf("$%2.2f", salary['salary_percentiles']['percentile_25']),
-            max: sprintf("$%2.2f", salary['salary_percentiles']['percentile_75'])
+            min: money(salary['salary_percentiles']['percentile_25']),
+            max: money(salary['salary_percentiles']['percentile_75'])
           }
         end 
       end 
     end 
     final_jobs
   end 
-end 
+
+  def self.money(amount)
+    split = amount.to_s(:delimited).split('.')
+    return "$#{split[0]}.#{split[1][0..1]}"
+  end 
+end
+
+
+
+# min: sprintf("$%2.2f", salary['salary_percentiles']['percentile_25']),
+# max: sprintf("$%2.2f", salary['salary_percentiles']['percentile_75'])

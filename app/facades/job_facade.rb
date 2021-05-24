@@ -14,13 +14,14 @@ class JobFacade
         title: listing[:attributes][:title],
         company: listing[:attributes][:company],
         url: listing[:attributes][:link],
-        description: listing[:attributes][:description].gsub("**BREAK**", "\n"),
+        description: listing[:attributes][:description].gsub("**BREAK**", "<br>"),
         location: listing[:attributes][:location],
         category: category,
         date: Date.parse(listing[:attributes][:publish_date]).strftime('%a %B %e, %Y').gsub('  ', ' '),
         search_title: title,
         search_city: city
       }
+      
       JobListing.find_or_create_by(hash)
     end
   end
