@@ -20,7 +20,7 @@ One Paragraph of project description goes here
 
 Go to [Endpoints](#endpoints) and use `/jobs` and `/salaries` endpoints to recieve salary information and job listings.
 
-#### Gemfile
+### Gemfile
 ![fj-gemfile](https://user-images.githubusercontent.com/72912074/119561756-d0a74580-bd62-11eb-97ae-2fecf29ae291.png)
 
 ### Installing
