@@ -10,7 +10,6 @@ One Paragraph of project description goes here
   - [Built With](#built-with)
   - [Versioning](#versioning)
   - [Authors](#authors)
-  - [License](#license)
   - [Acknowledgments](#acknowledgments)
 
 ## Getting Started
