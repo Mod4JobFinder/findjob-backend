@@ -52,7 +52,7 @@ Explain what these tests test and why
 ![user_create](https://user-images.githubusercontent.com/72912074/119562547-af932480-bd63-11eb-83c7-f4040da2a46b.png)
 
 
-### Patch findjob-backend.herokuapp.com/api/v1/users
+### PATCH findjob-backend.herokuapp.com/api/v1/users
 ![user_update](https://user-images.githubusercontent.com/72912074/119562579-b9b52300-bd63-11eb-9673-bdebd5d038dd.png)
 
 
