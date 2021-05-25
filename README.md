@@ -48,31 +48,31 @@ Explain what these tests test and why
 ## Endpoints
 
 ### POST findjob-backend.herokuapp.com/api/v1/users
-![user_create](https://user-images.githubusercontent.com/72912074/119562547-af932480-bd63-11eb-83c7-f4040da2a46b.png)
+![user_create](https://user-images.githubusercontent.com/72912074/119563835-4d3b2380-bd65-11eb-9851-d81397f5ebff.png)
 
 
 ### PATCH findjob-backend.herokuapp.com/api/v1/users
-![user_update](https://user-images.githubusercontent.com/72912074/119562579-b9b52300-bd63-11eb-9673-bdebd5d038dd.png)
+![user_patch](https://user-images.githubusercontent.com/72912074/119563881-57f5b880-bd65-11eb-8f19-f3e63d280dcc.png)
 
 
 ### POST findjob-backend.herokuapp.com/api/v1/sessions
-![session_create](https://user-images.githubusercontent.com/72912074/119562594-bf126d80-bd63-11eb-99c7-7bf564d5e166.png)
+![sessions_create](https://user-images.githubusercontent.com/72912074/119563890-5b893f80-bd65-11eb-84d3-c46982bab2c6.png)
 
 
 ### GET findjob-backend.herokuapp.com/api/v1/salaries
-![salary-get](https://user-images.githubusercontent.com/72912074/119562622-c6397b80-bd63-11eb-860a-9ffbd7eaad2f.png)
+![get_salaries](https://user-images.githubusercontent.com/72912074/119563901-5e843000-bd65-11eb-923f-a061d48fca28.png)
 
 
 ### GET findjob-backend.herokuapp.com/api/v1/salaries
-![job-get](https://user-images.githubusercontent.com/72912074/119562719-e36e4a00-bd63-11eb-9cd1-40669f0fd73c.png)
+![get_jobs](https://user-images.githubusercontent.com/72912074/119563916-647a1100-bd65-11eb-9bab-7b4bdd93be25.png)
 
 
 ### POST findjob-backend.herokuapp.com/api/v1/saved_jobs
-![saved_create](https://user-images.githubusercontent.com/72912074/119562636-ccc7f300-bd63-11eb-8f87-95f8a2ea9c61.png)
+![saved_create](https://user-images.githubusercontent.com/72912074/119563929-67750180-bd65-11eb-9599-3219f9185022.png)
 
 
 ### DELETE findjob-backend.herokuapp.com/api/v1/saved_jobs
-![saved_delete](https://user-images.githubusercontent.com/72912074/119562654-d18ca700-bd63-11eb-9bdf-20f1944e9b6d.png)
+![saved_delete](https://user-images.githubusercontent.com/72912074/119563938-69d75b80-bd65-11eb-8a2b-698d22ff9ba3.png)
 
 
 ## Built With
