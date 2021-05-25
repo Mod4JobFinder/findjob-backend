@@ -1,6 +1,6 @@
 # FindJob
 
-One Paragraph of project description goes here
+  A platform where users can find the average salary of tech jobs in urban areas across North America, as well as search for job listings and link to their application page. This platform is the backend of a service oriented architecture built using rails api and consumes two microservices built using flask python. The app consumes the microservices on set intervals to build the backend database and send the data as a response to the user's request.  
 
 ## Summary
 
@@ -13,8 +13,6 @@ One Paragraph of project description goes here
   - [Acknowledgments](#acknowledgments)
 
 ## Getting Started
-
-
 
 ### For Using Endpoints
 
@@ -31,7 +29,7 @@ Go to [Endpoints](#endpoints) and use `/jobs` and `/salaries` endpoints to recie
 
 ## Running the tests
 
-- Run `bundle exec rspec` to check the test suite
+- `bundle exec rspec` to run the test suite
 
 ### Break down into end to end tests
 
