@@ -108,10 +108,10 @@ This is version 1 of FindJob BackEnd, for any updated versions please check back
 ## Authors
 
   - **Andrew Johnston** - 
-    [Andrew Johnston](https://github.com/omegaeye)
+    [GitHub](https://github.com/omegaeye)
     
   - **Khoa Nguyen** - 
-    [Khoa Nguyen](https://github.com/omegaeye)
+    [GitHub](https://github.com/omegaeye)
 
 ## Acknowledgments
 
