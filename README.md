@@ -33,9 +33,27 @@ Go to [Endpoints](#endpoints) and use `/jobs` and `/salaries` endpoints to recie
 
 ### Break down into end to end tests
 
-Explain what these tests test and why
+#### User Create Happy Path
+![user_happypath](https://user-images.githubusercontent.com/72912074/119583439-e11be800-bd83-11eb-9a52-4556784dae57.png)
 
-    Give an example
+#### User Create Sad Path
+![password_sadpath](https://user-images.githubusercontent.com/72912074/119583463-ebd67d00-bd83-11eb-9b7e-0ffd97034b42.png)
+
+#### Saved Job Post Happy Path
+![saved_job_happy](https://user-images.githubusercontent.com/72912074/119583535-0c063c00-bd84-11eb-9c30-7408c29e54ee.png)
+
+#### Saved Job Delete Happy Path
+![saved_job_happy_2](https://user-images.githubusercontent.com/72912074/119583565-1c1e1b80-bd84-11eb-9890-8a195d95cb42.png)
+
+#### User Model Test
+![user_spec](https://user-images.githubusercontent.com/72912074/119583582-25a78380-bd84-11eb-986f-f0519710f2f7.png)
+
+#### Salary Service Happy Path
+![salary_service](https://user-images.githubusercontent.com/72912074/119583601-2fc98200-bd84-11eb-931b-bb337ac0b96e.png)
+
+#### Job Facade Happy Path
+![job_facade](https://user-images.githubusercontent.com/72912074/119583624-38ba5380-bd84-11eb-89d7-1ab4baceaecb.png)
+
 
 ### And coding style tests
 
