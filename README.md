@@ -94,6 +94,12 @@ Destroys a saved job in the database, given valid parameters of an exisiting sav
 ## Built With
 
   - Rails API
+  - BCrypt
+  - FastJsonApi
+  - RSpec
+  - Capybara
+  - VCR
+  - SimpleCov
 
 ## Versioning
 
